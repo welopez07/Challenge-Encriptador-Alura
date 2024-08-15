@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>   
+    <header>
+        <img class="logo" src="./assets/LogoAlura.png" alt="Logo Alura">
+    </header>
+    <main class="main">
+        <section class="seccion-izq">
+            <div class="seccion-izq-caja-texto">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="msj-advertencia">
+                <img src="./assets/alert button.png" alt="img de alerta">
+                <p>Solo letras minúsculas y sin acentos</p>                
+            </div> 
+            <div class="botones">
+                <input class="btn-encriptar" type="button"  value="Encriptar">
+                <input class="btn-desencriptar" type="button" value="Desencriptar">                
+            </div>   
+        </section>
+        <section class="seccion-der">                           
+            <div class="seccion-der-muñeco">
+                <img src="./assets/Muñeco.png" alt="muñeco sentado con lupa">
+            </div>
+            <div class="seccion-der-parrafo">
+                <h3>Ningún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="seccion-der-cont-resultado">
+                <textarea class="text-resultado" cols="30" rows="10" readonly></textarea>
+            </div>
+            <div class="seccion-der-btn-copiar">    
+                <input class="btn-copiar" type="button" value="Copiar">
+                <p class="mensaje-copiado">Texto copiado</p>            
+            </div>         
+        </section>
+    </main>    
+    <footer class="footer">
+        <p>Desarrollado por Wilson Lopez para Alura. 2024</p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
